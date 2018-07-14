@@ -1,134 +1,175 @@
 body {
-    color: #5f5f5f;
-    background-color: rgb(245, 245, 245);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    margin: 1.75em 1.25em 1.5em;
+  color: #5f5f5f;
+  background-color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #5f5f5f;
-    font-weight: 200;
+  text-decoration: none;
+  color: #5f5f5f;
+  font-weight: 200;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0.25em;
-    padding: 0;
+.navigation {
+  text-align: center;
 }
 
-ul li {
-    display: inline-block;
-    vertical-align: top;
-
+.section {
+  margin: 0 0.1em;
 }
 
-li p {
-    max-width: 630px;
-    max-height: 5.25em;
-    position: relative;
-    overflow: hidden;
+.section ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-li p:after {
-    content: "";
-    width: 100%;
-    height: 50px;
-    background: linear-gradient(transparent, rgb(245, 245, 245));
-    display: block;
-    position: absolute;
-    bottom: 0;
-
+.section li {
+  width: 27%;
+  min-width: 325px;
+  max-width: 100%;
+  padding: 0 1.5em;
+  margin: 1.25em 0;
+  display: inline-block;
+  vertical-align: top;
 }
 
+.section p {
+  max-width: 100%;
+  max-height: 5.25em;
+  position: relative;
+  overflow: hidden;
+}
+
+.section p:after {
+  content: "";
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(transparent, whitesmoke);
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  padding: 1em 2em;
+  font-size: 0.75em;
+}
+
+/* Utilities
+************************/
+.jumbotron {
+  display: inline-block;
+  width: 100%;
+  height: 4.95em;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+}
+
+/* Typography
+************************/
 .title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .subtitle {
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.jump-nav {
-    text-align: center;
+.title-object {
+  text-align: center;
 }
 
 .section-title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.25em;
-    margin: 1.25em 0 0.75em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 2.25em;
+  margin: 1.25em 0 0.75em;
 }
 
+.section-subtitle {
+  font-size: 1.75em;
+}
+
+/* Assets
+************************/
 .emoji {
-    font-size: 0.75em;
-    padding: 0.5em;
+  font-size: 0.75em;
+  padding: 0.5em;
 }
 
 .image {
-    width: 600px;
-    max-width: 100%;
-    height: auto;
-    margin: -0.5em 0 -0.25em;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: -0.5em 0 -0.25em;
 }
 
+.planet-svg {
+  width: 1.25em;
+  height: auto;
+  text-align: center;
+}
+
+/* Buttons
+************************/
 .pill {
-    display: inline-block;
-    color: #fff;
-    border-radius: 50px;
-    border-style: none;
-    box-shadow: 
-    font-size: 0.85em;
-    opacity: 0.7;
-    margin: 0.35em 0;
-    padding: 0.1em 1.25em;
+  display: inline-block;
+  color: #fff;
+  border-radius: 50px;
+  border-style: none;
+  font-size: 0.65em;
+  opacity: 0.9;
+  margin: 0.35em 0;
+  padding: 0.5em 1.25em;
 }
 
 .pill:hover {
-    opacity:1
+  opacity: 1;
 }
 
-.back-to-top {
-    font-size: 1.5em;
-    color: #f00;
-    background-color: transparent;
-    border-radius: 100%;
-    border-style: dotted;
-    padding: 0.3em 0.4em;
-    z-index: 100;
-    opacity: 0.7;
-    position: fixed;
-    bottom: 0.5em;
-    right: 0.5em;
-    
+.menu {
+  font-size: 0.85em;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 1%;
+  border-color: transparent;
+  padding: 0.3em 1.15em;
+  z-index: 100;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 1em;
+  right: 1.25em;
 }
 
-.back-to-top:hover {
-    background-color: #f00;
-    border-style: solid;
+.menu:hover {
+  opacity: 0.9;
 }
 
-.pink-orange-gradient {
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
+/* Gradients */
+/************************/
+.red-orange-gradient {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
 }
 
 .pink-purple-gradient {
-    background-image: linear-gradient( 109.2deg,  rgba(254,3,104,1) 9.3%, rgba(103,3,255,1) 89.5% );
+  background-image: linear-gradient(109.2deg, #fe0368 9.3%, #6703ff 89.5%);
 }
 
 .blue-gradient {
-    background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+  background-image: radial-gradient(circle farthest-corner at 12.3% 19.3%, #5558da 0%, #5fd1f9 100.2%);
 }
 
-.salmon-gradient {
-    background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+.peach-gradient {
+  background: linear-gradient(to right, #f2709c, #ff9472);
 }
 
 .green-gradient {
-    background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  background-image: linear-gradient(to right, #b6f492, #338b93);
 }
+
+/*# sourceMappingURL=styles.css.map */
