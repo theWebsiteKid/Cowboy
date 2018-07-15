@@ -4,7 +4,6 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 1.25em;
   margin: 0;
-  overflow-x: hidden;
 }
 
 a {
@@ -79,6 +78,7 @@ a {
 
 .section {
   margin: 0 0.25em;
+  overflow-x: hidden;
 }
 
 .section ul {
