@@ -40,7 +40,8 @@ padding: 0 0.25em;}
   display: inline-block;
   width: 100%;
   height: 4.95em;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);}
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  margin: 0;}
 
 /* Typography
 ************************/
