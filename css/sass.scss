@@ -64,6 +64,7 @@ body {
     font-family: "Courier New", Courier, monospace;
     font-size: 1.25em;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -77,8 +78,8 @@ a {
 }
 
 .section {
-    margin: 0 0.25em;
-    padding: 0.1em;
+    margin: 0;
+    max-width: 97%;
     overflow-x: hidden;
 }
 
@@ -88,10 +89,10 @@ a {
 }
 
 .section li {
-    width: 27%;
-    min-width: 325px;
+    width: 25%;
+    min-width: 275px;
     max-width: 100%;
-    padding: 0 1.5em;
+    padding: 0 1.25em;
     margin: 1.65em 0;
     display: inline-block;
     vertical-align: top;
@@ -143,7 +144,7 @@ a {
 }
 
 .description {
-    max-width: 95%;
+    max-width: 100%;
     max-height: 5.25em;
     position: relative;
     overflow: hidden;
