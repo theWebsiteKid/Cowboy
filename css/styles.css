@@ -77,14 +77,14 @@ a {
 
 /* Typography
 ************************/
+.logo {
+  text-align: center;
+}
+
 .title {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 2.5em;
   margin-bottom: 0.5em;
-  text-align: center;
-}
-
-.title-object {
   text-align: center;
 }
 
