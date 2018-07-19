@@ -50,16 +50,23 @@ a {
 }
 
 .jumbotron {
-  width: 600px;
-  max-width: 97%;
-  margin: 0 1.25em;
-  max-width: 97%;
-  overflow-x: hidden;
+  display: inline-block;
+  margin: 0;
+  padding: 1.25em;
+  min-width: 275px;
+  max-width: 100%;
+  height: auto;
+  color: #fff;
+  background-color: #5f5f5f;
+}
+
+.jumbotron p {
+  width: 100%;
+  max-width: 400px;
 }
 
 .section {
   margin: 0;
-  max-width: 97%;
   overflow-x: hidden;
 }
 
@@ -101,20 +108,19 @@ a {
   text-align: center;
 }
 
-.section-title {
+.title {
   font-size: 2em;
   margin: 0.35em 0;
   padding: 0;
 }
 
-.section-subtitle {
+.subtitle {
   display: inline;
   font-size: 0.95em;
 }
 
 .description {
-  font-family: "Courier New", Courier, monospace;
-  max-width: 97%;
+  max-width: 100%;
   max-height: 5.25em;
   position: relative;
   overflow: hidden;
@@ -122,7 +128,7 @@ a {
 
 .description:after {
   content: "";
-  width: 97%;
+  width: 100%;
   height: 50px;
   background: linear-gradient(transparent, whitesmoke);
   display: block;
